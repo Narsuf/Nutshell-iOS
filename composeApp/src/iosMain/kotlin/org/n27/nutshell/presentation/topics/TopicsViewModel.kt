@@ -52,12 +52,12 @@ class TopicsViewModel : ViewModel() {
                     Topic(
                         key = "taxes",
                         title = "Taxes in Europe",
-                        imageUrl = "http://fake.icon.url.com"
+                        imageUrl = "http://cdn-icons-png.flaticon.com/128/3012/3012365.png"
                     ),
                     Topic(
                         key = "gini",
                         title = "Income equality in Europe",
-                        imageUrl = "http://fake.icon.url.com"
+                        imageUrl = "http://cdn-icons-png.flaticon.com/128/149/149164.png"
                     )
                 )
             ))
