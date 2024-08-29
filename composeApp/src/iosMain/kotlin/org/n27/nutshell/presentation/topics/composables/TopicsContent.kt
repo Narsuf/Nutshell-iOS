@@ -4,10 +4,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
+import org.n27.nutshell.presentation.common.composables.Icon
 import org.n27.nutshell.presentation.common.composables.cards.Card
 import org.n27.nutshell.presentation.common.composables.cards.CardContainer
 import org.n27.nutshell.presentation.common.constants.Spacing
@@ -36,7 +37,7 @@ fun TopicsContent(content: Content, onAction: (action: TopicsAction) -> Unit) {
                             style = Typography.Bold
                         )
                     },
-                    endContent = { },
+                    endContent = { Icon(topic.imageUrl) },
                     onClick = { onAction(NextButtonClicked(topic.key, topic.title)) }
                 )
             }

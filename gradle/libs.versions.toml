@@ -4,12 +4,17 @@ kotlin = "2.0.0"
 
 kotlin-immutable = "0.3.7"
 androidx-lifecycle = "2.8.0"
+kamel = "0.9.5"
+ktor = "1.0.0"
 
 [libraries]
 kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlin-immutable" }
 
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+
+kamel = { group = "media.kamel", name = "kamel-image", version.ref = "kamel" }
+ktor = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
 
 [plugins]
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
