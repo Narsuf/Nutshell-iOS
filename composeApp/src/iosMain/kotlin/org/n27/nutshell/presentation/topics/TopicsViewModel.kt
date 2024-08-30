@@ -1,5 +1,6 @@
 package org.n27.nutshell.presentation.topics
 
+import org.n27.nutshell.data.DataSource
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.collections.immutable.persistentListOf
@@ -47,20 +48,25 @@ class TopicsViewModel : ViewModel() {
     private fun getTopics() {
         viewModelScope.launch {
             state.emit(Loading)
-            state.emit(Content(
-                topics = persistentListOf(
-                    Topic(
-                        key = "taxes",
-                        title = "Taxes in Europe",
-                        imageUrl = "http://cdn-icons-png.flaticon.com/128/3012/3012365.png"
-                    ),
-                    Topic(
-                        key = "gini",
-                        title = "Income equality in Europe",
-                        imageUrl = "http://cdn-icons-png.flaticon.com/128/149/149164.png"
+
+            DataSource.onTopics = { topics ->
+                state.tryEmit(Content(
+                    topics = persistentListOf(
+                        Topic(
+                            key = "taxes",
+                            title = topics ?: "Lul",
+                            imageUrl = "http://cdn-icons-png.flaticon.com/128/3012/3012365.png"
+                        ),
+                        Topic(
+                            key = "gini",
+                            title = "Income equality in Europe",
+                            imageUrl = "http://cdn-icons-png.flaticon.com/128/149/149164.png"
+                        )
                     )
-                )
-            ))
+                ))
+            }
+
+            DataSource.getTopics()
         }
     }
 }
