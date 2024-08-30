@@ -1,6 +1,5 @@
 package org.n27.nutshell.presentation.topics
 
-import org.n27.nutshell.data.DataSource
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.collections.immutable.persistentListOf
@@ -10,6 +9,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
+import org.n27.nutshell.data.DataSource
 import org.n27.nutshell.domain.topics.model.Topic
 import org.n27.nutshell.presentation.topics.entities.TopicsAction
 import org.n27.nutshell.presentation.topics.entities.TopicsAction.NextButtonClicked

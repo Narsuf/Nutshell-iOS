@@ -1,9 +1,5 @@
 package org.n27.nutshell.data.topics.mapping
 
-import cocoapods.FirebaseDatabase.FIRDataSnapshot
-import dev.gitlive.firebase.database.ChildEvent
-import dev.gitlive.firebase.database.DataSnapshot
-import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.serialization.json.Json
 import org.n27.nutshell.data.topics.model.TopicRaw
 import org.n27.nutshell.data.topics.model.TopicsRaw

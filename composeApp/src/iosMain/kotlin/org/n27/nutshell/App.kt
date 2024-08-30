@@ -2,10 +2,6 @@ package org.n27.nutshell
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.database.FirebaseDatabase
-import dev.gitlive.firebase.database.database
-import org.n27.nutshell.data.NutshellRepositoryImpl
 import org.n27.nutshell.presentation.topics.TopicsViewModel
 import org.n27.nutshell.presentation.topics.composables.TopicsScreen
 
@@ -13,8 +9,6 @@ import org.n27.nutshell.presentation.topics.composables.TopicsScreen
 fun App() {
     MaterialTheme {
         TopicsScreen(TopicsViewModel())
-
-
 
         /*var showContent by remember { mutableStateOf(false) }
 

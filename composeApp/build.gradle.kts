@@ -40,7 +40,6 @@ kotlin {
             implementation(libs.firebase.analytics)
             implementation(libs.firebase.crashlytics)
 
-            implementation(libs.gson)
             implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
         }
     }

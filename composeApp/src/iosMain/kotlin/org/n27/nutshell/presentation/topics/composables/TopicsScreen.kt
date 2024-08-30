@@ -9,7 +9,6 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import org.n27.nutshell.presentation.common.composables.screen.Screen
 import org.n27.nutshell.presentation.common.constants.Spacing
 import org.n27.nutshell.presentation.topics.TopicsViewModel
-import org.n27.nutshell.presentation.topics.entities.TopicsUiState
 import org.n27.nutshell.presentation.topics.entities.TopicsUiState.Content
 import org.n27.nutshell.presentation.topics.entities.TopicsUiState.Error
 
