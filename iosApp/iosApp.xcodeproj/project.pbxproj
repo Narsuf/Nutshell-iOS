@@ -21,8 +21,6 @@
 		CFE95F072C820FF00040F952 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F062C820FF00040F952 /* FirebaseAnalytics */; };
 		CFE95F092C820FF00040F952 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F082C820FF00040F952 /* FirebaseCrashlytics */; };
 		CFE95F0B2C820FF00040F952 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F0A2C820FF00040F952 /* FirebaseDatabase */; };
-		CFE95F0D2C8210450040F952 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F0C2C8210450040F952 /* FirebaseAnalyticsOnDeviceConversion */; };
-		CFE95F0F2C8210500040F952 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F0E2C8210500040F952 /* FirebaseAppCheck */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +47,7 @@
 			files = (
 				CFE95F092C820FF00040F952 /* FirebaseCrashlytics in Frameworks */,
 				CFE95F072C820FF00040F952 /* FirebaseAnalytics in Frameworks */,
-				CFE95F0D2C8210450040F952 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				CFE95F0B2C820FF00040F952 /* FirebaseDatabase in Frameworks */,
-				CFE95F0F2C8210500040F952 /* FirebaseAppCheck in Frameworks */,
 				49A715330E4062D39AE8564D /* Pods_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,8 +162,6 @@
 				CFE95F062C820FF00040F952 /* FirebaseAnalytics */,
 				CFE95F082C820FF00040F952 /* FirebaseCrashlytics */,
 				CFE95F0A2C820FF00040F952 /* FirebaseDatabase */,
-				CFE95F0C2C8210450040F952 /* FirebaseAnalyticsOnDeviceConversion */,
-				CFE95F0E2C8210500040F952 /* FirebaseAppCheck */,
 			);
 			productName = iosApp;
 			productReference = 7555FF7B242A565900829871 /* Nutshell-iOS.app */;
@@ -524,16 +518,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CF73CCEF2C80A9F30054AD1F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
-		};
-		CFE95F0C2C8210450040F952 /* FirebaseAnalyticsOnDeviceConversion */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CF73CCEF2C80A9F30054AD1F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsOnDeviceConversion;
-		};
-		CFE95F0E2C8210500040F952 /* FirebaseAppCheck */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CF73CCEF2C80A9F30054AD1F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAppCheck;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
