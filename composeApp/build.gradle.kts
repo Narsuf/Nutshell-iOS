@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
-    alias(libs.plugins.serialization)
+    alias(libs.plugins.kt.serialization)
 }
 
 kotlin {
@@ -36,11 +36,8 @@ kotlin {
             implementation(libs.kamel)
             implementation(libs.ktor)
 
-            implementation(libs.firebase.database)
-            implementation(libs.firebase.analytics)
-            implementation(libs.firebase.crashlytics)
-
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+            // Serialization
+            implementation(libs.serialization)
         }
     }
 }

@@ -1,15 +1,13 @@
 [versions]
 compose-plugin = "1.6.11"
 kotlin = "2.0.0"
-serialization = "2.0.20"
-cocoapods = "2.0.20"
+kt-serialization = "2.0.20"
 
 kotlin-immutable = "0.3.7"
 androidx-lifecycle = "2.8.0"
 kamel = "0.9.5"
 ktor = "1.0.0"
-gson = "2.8.7"
-firebase = "2.0.0"
+serialization = "1.5.0"
 
 [libraries]
 kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlin-immutable" }
@@ -19,15 +17,10 @@ androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle
 
 kamel = { group = "media.kamel", name = "kamel-image", version.ref = "kamel" }
 ktor = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
-gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
-
-firebase-database = { module = "dev.gitlive:firebase-database", version.ref = "firebase" }
-firebase-analytics = { module = "dev.gitlive:firebase-analytics", version.ref = "firebase" }
-firebase-crashlytics = { module = "dev.gitlive:firebase-crashlytics", version.ref = "firebase" }
+serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
 
 [plugins]
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization" }
-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "cocoapods" }
+kt-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kt-serialization" }
