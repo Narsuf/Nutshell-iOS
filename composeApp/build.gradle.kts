@@ -1,9 +1,8 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kt.serialization)
 }
 
 kotlin {
@@ -19,7 +18,6 @@ kotlin {
     }
     
     sourceSets {
-        
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -37,6 +35,9 @@ kotlin {
             // Async image
             implementation(libs.kamel)
             implementation(libs.ktor)
+
+            // Serialization
+            implementation(libs.serialization)
         }
     }
 }

@@ -2,14 +2,14 @@ package org.n27.nutshell.presentation.topics
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.toPersistentList
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
-import org.n27.nutshell.domain.topics.model.Topic
+import org.n27.nutshell.data.NutshellRepositoryImpl
 import org.n27.nutshell.presentation.topics.entities.TopicsAction
 import org.n27.nutshell.presentation.topics.entities.TopicsAction.NextButtonClicked
 import org.n27.nutshell.presentation.topics.entities.TopicsAction.RetryButtonClicked
@@ -17,9 +17,11 @@ import org.n27.nutshell.presentation.topics.entities.TopicsEvent
 import org.n27.nutshell.presentation.topics.entities.TopicsEvent.GoToNextScreen
 import org.n27.nutshell.presentation.topics.entities.TopicsUiState
 import org.n27.nutshell.presentation.topics.entities.TopicsUiState.Content
+import org.n27.nutshell.presentation.topics.entities.TopicsUiState.Error
 import org.n27.nutshell.presentation.topics.entities.TopicsUiState.Loading
+import org.n27.nutshell.presentation.common.model.Error as MyError
 
-class TopicsViewModel : ViewModel() {
+class TopicsViewModel(private val repository: NutshellRepositoryImpl) : ViewModel() {
 
     private val state = MutableStateFlow<TopicsUiState>(Loading)
     internal val uiState = state.asStateFlow()
@@ -47,20 +49,15 @@ class TopicsViewModel : ViewModel() {
     private fun getTopics() {
         viewModelScope.launch {
             state.emit(Loading)
-            state.emit(Content(
-                topics = persistentListOf(
-                    Topic(
-                        key = "taxes",
-                        title = "Taxes in Europe",
-                        imageUrl = "http://cdn-icons-png.flaticon.com/128/3012/3012365.png"
-                    ),
-                    Topic(
-                        key = "gini",
-                        title = "Income equality in Europe",
-                        imageUrl = "http://cdn-icons-png.flaticon.com/128/149/149164.png"
-                    )
+
+            repository.getTopics().collect {
+                state.emit(
+                    if (it.items.isNotEmpty())
+                        Content(it.items.toPersistentList())
+                    else
+                        Error(MyError())
                 )
-            ))
+            }
         }
     }
 }

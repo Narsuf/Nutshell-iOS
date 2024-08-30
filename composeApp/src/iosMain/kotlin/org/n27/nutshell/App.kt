@@ -2,13 +2,14 @@ package org.n27.nutshell
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
+import org.n27.nutshell.data.NutshellRepositoryImpl
 import org.n27.nutshell.presentation.topics.TopicsViewModel
 import org.n27.nutshell.presentation.topics.composables.TopicsScreen
 
 @Composable
 fun App() {
     MaterialTheme {
-        TopicsScreen(TopicsViewModel())
+        TopicsScreen(TopicsViewModel(NutshellRepositoryImpl()))
 
         /*var showContent by remember { mutableStateOf(false) }
 
