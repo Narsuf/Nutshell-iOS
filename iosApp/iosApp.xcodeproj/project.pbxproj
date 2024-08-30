@@ -10,14 +10,11 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		49A715330E4062D39AE8564D /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D995228B88D1276C28D30786 /* Pods_iosApp.framework */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		CF2817E82C81CBC900B4415F /* TopicMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2817E72C81CBC900B4415F /* TopicMapper.swift */; };
 		CF4FF4822C80C63D00BB12D5 /* FirebaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4FF4812C80C63D00BB12D5 /* FirebaseApi.swift */; };
 		CF4FF4882C81B1E200BB12D5 /* TopicRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4FF4872C81B1E200BB12D5 /* TopicRaw.swift */; };
 		CFBB5E4A2C81E282009705DE /* TopicsRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5E492C81E282009705DE /* TopicsRaw.swift */; };
-		CFCDE7902C80C302002450A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFCDE78F2C80C302002450A2 /* GoogleService-Info.plist */; };
-		CFE95F052C820F590040F952 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFE95F042C820F590040F952 /* GoogleService-Info.plist */; };
 		CFE95F072C820FF00040F952 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F062C820FF00040F952 /* FirebaseAnalytics */; };
 		CFE95F092C820FF00040F952 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F082C820FF00040F952 /* FirebaseCrashlytics */; };
 		CFE95F0B2C820FF00040F952 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F0A2C820FF00040F952 /* FirebaseDatabase */; };
@@ -27,7 +24,7 @@
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		7555FF7B242A565900829871 /* Nutshell-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nutshell-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555FF7B242A565900829871 /* Nutshell-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutshell-iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3632DC29227652001CCB65 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
@@ -35,9 +32,6 @@
 		CF4FF4812C80C63D00BB12D5 /* FirebaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApi.swift; sourceTree = "<group>"; };
 		CF4FF4872C81B1E200BB12D5 /* TopicRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRaw.swift; sourceTree = "<group>"; };
 		CFBB5E492C81E282009705DE /* TopicsRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsRaw.swift; sourceTree = "<group>"; };
-		CFCDE78F2C80C302002450A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CFE95F042C820F590040F952 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D995228B88D1276C28D30786 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +42,6 @@
 				CFE95F092C820FF00040F952 /* FirebaseCrashlytics in Frameworks */,
 				CFE95F072C820FF00040F952 /* FirebaseAnalytics in Frameworks */,
 				CFE95F0B2C820FF00040F952 /* FirebaseDatabase in Frameworks */,
-				49A715330E4062D39AE8564D /* Pods_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +59,6 @@
 		42799AB246E5F90AF97AA0EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D995228B88D1276C28D30786 /* Pods_iosApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,9 +84,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
-				CFE95F042C820F590040F952 /* GoogleService-Info.plist */,
 				CF4FF4802C80C62F00BB12D5 /* Data */,
-				CFCDE78F2C80C302002450A2 /* GoogleService-Info.plist */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -146,7 +136,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */;
 			buildPhases = (
-				6D8B0859D62CDD2E00ED3E01 /* [CP] Check Pods Manifest.lock */,
 				F36B1CEB2AD83DDC00CB74D5 /* Compile Kotlin Framework */,
 				CFBB5E4B2C81EFF0009705DE /* ShellScript */,
 				7555FF77242A565900829871 /* Sources */,
@@ -210,54 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
-				CFE95F052C820F590040F952 /* GoogleService-Info.plist in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
-				CFCDE7902C80C302002450A2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D8B0859D62CDD2E00ED3E01 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iosApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CFBB5E4B2C81EFF0009705DE /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :composeApp:embedAndSignAppleFrameworkForXcode\n";
-		};
 		F36B1CEB2AD83DDC00CB74D5 /* Compile Kotlin Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
