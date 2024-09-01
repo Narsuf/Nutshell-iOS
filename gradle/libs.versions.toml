@@ -17,7 +17,10 @@ androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle
 
 kamel = { group = "media.kamel", name = "kamel-image", version.ref = "kamel" }
 ktor = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+
 serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+
+koin = { module = "io.insert-koin:koin-compose" }
 
 [plugins]
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
