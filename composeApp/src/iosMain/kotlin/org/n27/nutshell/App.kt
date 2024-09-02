@@ -4,15 +4,23 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import org.koin.compose.KoinIsolatedContext
 import org.koin.compose.koinInject
+import org.koin.core.KoinApplication
 import org.koin.dsl.koinApplication
+import org.n27.nutshell.data.DataSource
 import org.n27.nutshell.di.AppModule
 import org.n27.nutshell.presentation.topics.TopicsViewModel
 import org.n27.nutshell.presentation.topics.composables.TopicsScreen
 
+lateinit var koinApp: KoinApplication
+
+fun initKoin(ds: DataSource) {
+    koinApp = koinApplication {
+        modules(AppModule(ds).module)
+    }
+}
+
 @Composable
 fun App() {
-
-    val koinApp = koinApplication { modules(AppModule().module) }
 
     KoinIsolatedContext(koinApp) {
         val viewModel: TopicsViewModel = koinInject()

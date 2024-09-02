@@ -7,17 +7,7 @@ struct iOSApp: App {
     
     init() {
         FirebaseApp.configure()
-        initCallbacks()
-    }
-    
-    func initCallbacks() {
-        let firebaseApi = FirebaseApi()
-        
-        SwiftInterfaceKt.getTopics = {
-            firebaseApi.getTopics() { json in
-                SwiftInterfaceKt.onTopics(json)
-            }
-        }
+        AppKt.doInitKoin(ds: DataSourceImpl())
     }
     
     var body: some Scene {
