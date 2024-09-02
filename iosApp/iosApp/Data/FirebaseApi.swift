@@ -4,17 +4,17 @@ class FirebaseApi {
     
     let db = Database.database()
 
-    func getTopics(action: @escaping (String?) -> Void) {
+    func getTopics(onTopics: @escaping (String?) -> Void) {
         get(key: "topics") { snapshot in
             let topics = snapshot?.toTopics()
             let json = topics?.toTopicsEcoded()
-            action(json)
+            onTopics(json)
         }
     }
     
-    private func get(key: String, action: @escaping (DataSnapshot?) -> Void) {
+    private func get(key: String, onResult: @escaping (DataSnapshot?) -> Void) {
         db.reference().child(key).observeSingleEvent(of: .value, with: { snapshot in
-            action(snapshot)
+            onResult(snapshot)
         })
     }
 }
