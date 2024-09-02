@@ -38,6 +38,11 @@ kotlin {
 
             // Serialization
             implementation(libs.serialization)
+
+            // Koin
+            val koinBom = platform("io.insert-koin:koin-bom:3.5.6")
+            implementation(koinBom)
+            implementation(libs.koin)
         }
     }
 }

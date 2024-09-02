@@ -16,6 +16,7 @@
 		CF4FF4882C81B1E200BB12D5 /* TopicRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4FF4872C81B1E200BB12D5 /* TopicRaw.swift */; };
 		CFBB5E4A2C81E282009705DE /* TopicsRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5E492C81E282009705DE /* TopicsRaw.swift */; };
 		CFD9B3D32C821C1000297D83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B3D22C821C1000297D83 /* GoogleService-Info.plist */; };
+		CFD9B3D52C85A0A600297D83 /* DataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B3D42C85A0A600297D83 /* DataSourceImpl.swift */; };
 		CFE95F072C820FF00040F952 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F062C820FF00040F952 /* FirebaseAnalytics */; };
 		CFE95F092C820FF00040F952 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F082C820FF00040F952 /* FirebaseCrashlytics */; };
 		CFE95F0B2C820FF00040F952 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CFE95F0A2C820FF00040F952 /* FirebaseDatabase */; };
@@ -34,6 +35,7 @@
 		CF4FF4872C81B1E200BB12D5 /* TopicRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRaw.swift; sourceTree = "<group>"; };
 		CFBB5E492C81E282009705DE /* TopicsRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsRaw.swift; sourceTree = "<group>"; };
 		CFD9B3D22C821C1000297D83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CFD9B3D42C85A0A600297D83 /* DataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				CF2817E62C81CBB700B4415F /* Model */,
 				CF2817E52C81CBAE00B4415F /* Mapping */,
 				CF4FF4812C80C63D00BB12D5 /* FirebaseApi.swift */,
+				CFD9B3D42C85A0A600297D83 /* DataSourceImpl.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				CF2817E82C81CBC900B4415F /* TopicMapper.swift in Sources */,
 				CF4FF4822C80C63D00BB12D5 /* FirebaseApi.swift in Sources */,
+				CFD9B3D52C85A0A600297D83 /* DataSourceImpl.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				CF4FF4882C81B1E200BB12D5 /* TopicRaw.swift in Sources */,
 				CFBB5E4A2C81E282009705DE /* TopicsRaw.swift in Sources */,

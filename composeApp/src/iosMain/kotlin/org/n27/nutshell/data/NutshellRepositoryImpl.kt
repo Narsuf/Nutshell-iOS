@@ -8,10 +8,10 @@ import org.n27.nutshell.data.topics.mapping.toTopics
 import org.n27.nutshell.domain.NutshellRepository
 import org.n27.nutshell.domain.topics.model.Topics
 
-class NutshellRepositoryImpl : NutshellRepository {
+class NutshellRepositoryImpl(private val ds: DataSource) : NutshellRepository {
 
     override suspend fun getTopics(): Flow<Topics> = channelFlow {
-        DataSource.onTopics = { json ->
+        ds.getTopics { json ->
             var value = Topics(persistentListOf())
 
             json
@@ -22,7 +22,6 @@ class NutshellRepositoryImpl : NutshellRepository {
             close()
         }
 
-        DataSource.getTopics()
         awaitClose()
     }
 }

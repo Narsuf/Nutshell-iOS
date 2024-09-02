@@ -1,8 +1,6 @@
 package org.n27.nutshell.data
 
-object DataSource {
+interface DataSource {
 
-    lateinit var onTopics: (String?) -> Unit
-
-    fun getTopics() = getTopics.invoke()
+    fun getTopics(onTopics: (String?) -> Unit)
 }
